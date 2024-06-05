@@ -6,7 +6,6 @@ export const Container = styled.header`
     background-color: #F8F7F7;
     display: flex;
     flex-direction: row;
-    padding-left: 50px;
     padding-top: 10px;
 `
 
