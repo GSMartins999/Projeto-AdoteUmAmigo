@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.header`
+export const Container = styled.footer`
     width: 100vw;
     min-height: 100px;
     height: auto;
@@ -9,6 +9,7 @@ export const Container = styled.header`
     flex-direction: row;
     padding-top: 10px;
     justify-content: space-between;
+    margin-top: 0;
 `
 
 export const ContainerIcone = styled.div`

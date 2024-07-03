@@ -14,7 +14,6 @@ import {
 
 export function Footer() {
   return (
-    <>
       <Container>
         <ContainerIcone>
           <Icones>
@@ -51,6 +50,5 @@ export function Footer() {
           </ContainerTexto>
         </ContainerText>
       </Container>
-    </>
   );
 }

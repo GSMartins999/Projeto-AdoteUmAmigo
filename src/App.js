@@ -1,5 +1,3 @@
-import { Footer } from "./components/footer/Footer";
-import { Header } from "./components/header/header";
 import { createGlobalStyle } from "styled-components";
 import { TelaInicial } from "./components/telaInicial/telaInicial";
 
@@ -19,9 +17,7 @@ function App() {
   return (
     <>
     <GlobalStyle />
-     <Header/>
      <TelaInicial/>
-     <Footer/>
     </>
   );
 }
