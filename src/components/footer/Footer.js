@@ -1,6 +1,6 @@
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
+import { FiFacebook } from "react-icons/fi";
+import { CiTwitter } from "react-icons/ci";
+import { IoLogoInstagram } from "react-icons/io";
 import {
   Container,
   ContainerIcone,
@@ -18,13 +18,13 @@ export function Footer() {
         <ContainerIcone>
           <Icones>
             <Icone1>
-              <FaSquareInstagram />
+              <IoLogoInstagram  style={{width: "90%", height: "90%", color: "white"}}/>
             </Icone1>
             <Icone1>
-              <FaTwitterSquare />
+              <CiTwitter style={{width: "90%", height: "90%", color: "white"}}/>
             </Icone1>
             <Icone1>
-              <FaFacebookSquare />
+              <FiFacebook style={{width: "90%", height: "90%", color: "white"}}/>
             </Icone1>
           </Icones>
         </ContainerIcone>

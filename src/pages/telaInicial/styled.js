@@ -46,7 +46,6 @@ export const SubContainerPrincipal = styled.div`
 export const ContainerIcones = styled.ul`
     display: flex;
     flex-direction: column;
-    /* o flex direction define a posição do objeto, horizontal(columm) ou vertical(row)*/
     gap: 8px;
 
 `
