@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.header`
     width: 100vw;
     height: 100px;
-    background-color: #F8F7F7;
+    background-color: white;
     display: flex;
     flex-direction: row;
     padding-top: 10px;
@@ -51,6 +51,7 @@ export const Rodape = styled.footer`
     width: 100vw;
     height: 20px;
     background-color: brown;
+
 `
 
 

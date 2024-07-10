@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import { TelaInicial } from "./components/telaInicial/telaInicial";
+import { TelaInicial } from "./pages/telaInicial/telaInicial";
+import { Router } from "./Router";
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -17,7 +18,7 @@ function App() {
   return (
     <>
     <GlobalStyle />
-     <TelaInicial/>
+     <Router/>
     </>
   );
 }

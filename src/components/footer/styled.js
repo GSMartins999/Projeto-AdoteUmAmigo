@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
     width: 100vw;
-    min-height: 100px;
+    min-height: 150px;
     height: auto;
     background-color: #FFC1C1;
     display: flex;
@@ -29,11 +29,17 @@ export const Icones = styled.ul`
     margin-left: 20px;
 `
 
-export const Icone1 = styled.li`
-    font-size: 2rem;
+export const Icone1 = styled.div`
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: brown;
     list-style: none;
-    border-radius: 50%;
+    background-color: brown;
+    border-radius: 100%;
+    padding: 2px;
 `
 export const ContainerText = styled.div`
     display: flex;
@@ -56,6 +62,6 @@ export const ContainerTexto = styled.div`
     gap: 10px;
 `
 export const TextDiv = styled.div`
-  flex: 1; /* Faz com que as divs ocupem o mesmo espaço */
-  min-width: 45%; /* Define uma largura mínima para as divs */
+  flex: 1;
+  min-width: 45%; 
 `;
