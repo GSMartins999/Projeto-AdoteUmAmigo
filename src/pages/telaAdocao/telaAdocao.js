@@ -1,10 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import { goToAdocao, goToPrincipal } from "../../Router/cordinator";
+import { goToAdocao, goToAdocoesEspeciais, goToComoAdotar, goToCondicoesParaAdotar, goToNossosAmiguinhos, goToPrincipal } from "../../Router/cordinator";
 import { Footer } from "../../components/footer/Footer";
 import { Header } from "../../components/header/header";
 import {
-  BotaoInicio,
-  ContainerNav,
   ContainerSaibaMais,
   ContainerTextos,
   ContainerTitulo,
@@ -14,13 +12,13 @@ import {
   NavBar,
   Quadros,
   SaibaMais,
-  TextoP,
   TextosP,
 } from "../telaAdocao/styled";
 import { TbPawFilled } from "react-icons/tb";
 import { IoNewspaperOutline } from "react-icons/io5";
 import { LiaQuestionSolid } from "react-icons/lia";
 import { GiSittingDog } from "react-icons/gi";
+import { Nav } from "../../components/containerNav/containerNav";
 
 
 
@@ -31,11 +29,7 @@ export const TelaAdocao = () => {
     <>
       <Header />
       <NavBar>
-        <ContainerNav>
-          <TextoP>
-            <BotaoInicio name="Inicio" placeholder="Inicio" onClick={()=> goToPrincipal(navigate)}><p style={{color: "brown"}}>Inicio</p></BotaoInicio> &gt; <BotaoInicio name="Adotar" placeholder="Adotar" onClick={()=> goToAdocao(navigate)}><p style={{color: "brown"}}>Adotar</p></BotaoInicio>
-          </TextoP>
-        </ContainerNav>
+        <Nav/>
       </NavBar>
       <Main>
         <Quadros>
@@ -50,8 +44,8 @@ export const TelaAdocao = () => {
               Conheça todos os cães e gatos que estão à espera de uma família.
             </TextosP>
           </ContainerTextos>
-          <ContainerSaibaMais>
-            <SaibaMais>Saiba Mais</SaibaMais>
+          <ContainerSaibaMais onClick={()=> goToNossosAmiguinhos(navigate)}>
+            <SaibaMais >Saiba Mais</SaibaMais>
           </ContainerSaibaMais>
         </Quadros>
 
@@ -67,7 +61,7 @@ export const TelaAdocao = () => {
               Eles também merecem um lar. Conhceça nossos animais especias.
             </TextosP>
           </ContainerTextos>
-          <ContainerSaibaMais>
+          <ContainerSaibaMais  onClick={() => goToAdocoesEspeciais(navigate)}>
             <SaibaMais>Saiba Mais</SaibaMais>
           </ContainerSaibaMais>
         </Quadros>
@@ -85,7 +79,7 @@ export const TelaAdocao = () => {
               necessárias para uma adoção.
             </TextosP>
           </ContainerTextos>
-          <ContainerSaibaMais>
+          <ContainerSaibaMais  onClick={() => goToCondicoesParaAdotar(navigate)}>
             <SaibaMais>Saiba Mais</SaibaMais>
           </ContainerSaibaMais>
         </Quadros>
@@ -102,7 +96,7 @@ export const TelaAdocao = () => {
               Conheça aqui o passo a passo para realizar sua adoção.
             </TextosP>
           </ContainerTextos>
-          <ContainerSaibaMais>
+          <ContainerSaibaMais  onClick={() => goToComoAdotar(navigate)}>
             <SaibaMais>Saiba Mais</SaibaMais>
           </ContainerSaibaMais>
         </Quadros>

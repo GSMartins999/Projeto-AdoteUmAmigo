@@ -66,6 +66,12 @@ export const ContainerSaibaMais = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    &:hover{
+        background-color: pink
+    }
+
+
 `
 
 export const ContainerTitulo = styled.div`
@@ -99,27 +105,15 @@ export const TextosP = styled.p`
     max-height: 130px;
 `
 
-export const ContainerNav = styled.div`
-    width: 100%; 
-    height: 100%;
-    padding-left: 20px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
 
-`
-export const TextoP = styled.p`
-    color: brown;
-    width: 20%;
-    text-align: left;
-`
 
 export const SaibaMais = styled.p`
     color: #8B6969;
     width: 80%;
     text-align: center;
-`
+    cursor: pointer;
 
+`   
 export const BotaoInicio = styled.button`
     background: none;
     border: none;
